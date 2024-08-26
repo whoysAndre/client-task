@@ -4,11 +4,19 @@ import { getProject } from "@/helpers";
 import { cookies } from "next/headers";
 
 
+
+
 interface IParams {
   params: {
     id: string
   };
 }
+
+
+export const metadata = {
+ title: 'Detalles del proyecto',
+ description: 'Ve los detalles de tu proyecto',
+};
 
 export default async function DetailProjectPage({ params }: IParams) {
 

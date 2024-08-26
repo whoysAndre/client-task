@@ -9,6 +9,12 @@ interface IParams{
   };
 }
 
+
+export const metadata = {
+ title: 'Edita tu tarea',
+ description: 'Edita tu tarea y administrala',
+};
+
 export default async function TaskEditPage({params}:IParams) {
 
   const task = await getTask(+params.id);

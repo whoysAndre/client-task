@@ -9,6 +9,12 @@ interface IParams{
   };
 }
 
+
+export const metadata = {
+ title: 'Edita tu proyecto',
+ description: 'Corrige el proyecto en esta sección',
+};
+
 export default async function EditProductPage({params}:IParams) {
   
 

@@ -1,6 +1,12 @@
 import { bodyFont, profileFont, titleFont } from "@/config/fonts";
 import { headers } from "next/headers";
 
+
+
+export const metadata = {
+ title: 'Tu perfil',
+ description: 'Administra tu perfil',
+};
 export default function ProfilePage() {
 
   const headerList = headers();

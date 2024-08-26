@@ -1,5 +1,11 @@
 import { FormCreateProject, Title } from "@/components";
 
+
+export const metadata = {
+ title: 'Crea un nuevo proyecto',
+ description: 'Crea un nuevo proyecto y administra',
+};
+
 export default function CreateProjectPage() {
   return (
     <>

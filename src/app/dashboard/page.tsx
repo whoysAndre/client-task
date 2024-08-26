@@ -3,6 +3,13 @@ import { Title } from "@/components";
 import { ProjectsContainer } from "@/components/projects/ProjectsContainer";
 import { getAllProject } from "@/helpers";
 
+
+
+export const metadata = {
+ title: 'Home | task',
+ description: 'Es la página principal big task',
+};
+
 export default async function HomePage() {
   
   const cookieStore = cookies();
