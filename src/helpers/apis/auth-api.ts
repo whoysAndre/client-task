@@ -21,7 +21,7 @@ export const login = async (formData: Data) => {
 
   try {
 
-    const resp = await axios.post("/auth/login", formData,);
+    const resp = await axios.post("/auth/login", formData);
 
     return resp.data;
 

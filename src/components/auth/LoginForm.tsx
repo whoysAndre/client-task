@@ -28,8 +28,7 @@ export const LoginForm = () => {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
 
     const result = await login(data);
-
-    if (result.status === 401) {
+    if (result.success===false) {
       Swal.fire({
         title: "Credenciales Invalidas",
         text: result.message,
@@ -40,7 +39,7 @@ export const LoginForm = () => {
 
     Cookie.set("authToken", result.token);
 
-    router.push("/dashboard");
+    router.replace("/dashboard");
 
   }
 

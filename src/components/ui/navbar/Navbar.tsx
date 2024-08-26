@@ -22,7 +22,7 @@ export const Navbar = () => {
 
   const onLogout = ()=>{
     Cookies.remove("authToken");
-    router.refresh();
+    router.push("/");
   };
       
   return (
